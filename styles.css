@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "MuseoSansRounded";
+    src: url("fonts/museosansrounded-100-webfont.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+/* ------------------ Nike block -------------------- */
+
+.nike-bg {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(images/nike_bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.nike-bg__card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------ Blue card -------------------- */
+.card {
+    border-radius: 10px;
+    background-color: rgb(17, 26, 40);
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+    position: relative;
+    width: 686px;
+    height: 391px;
+}
+.card__images {
+    width: 385px;
+    height: 355px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+.card__description {
+    width: 250px;
+    height: 355px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding-top: 60px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+.card__logo {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+
+/* ------------------ Product description -------------------- */
+.product__title {
+    font-size: 24px;
+    font-family: "MuseoSansRounded";
+    color: rgb(225, 225, 225);
+    line-height: 1.083;
+    margin-bottom: 5px;
+}
+.product__subtitle {
+    font-size: 14px;
+    font-family: "MuseoSansRounded";
+    color: rgba(225, 225, 225, 0.541);
+    line-height: 1.857;
+}
+.product__stars {
+    margin-top: 20px;
+}
+.product__options {
+    margin-top: 25px;
+    display: flex;
+}
+.product__options .button {
+    margin-right: 2px;
+}
+
+.product__buy {
+    margin-top: 30px;
+}
+
+/* ------------------ Stars -------------------- */
+.stars {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.stars__one {
+    width: 12px;
+    height: 12px;
+    background-image: url(images/icon-star.png);
+}
+.stars__one--gray {
+    filter: grayscale(100%);
+}
+
+/* ------------------ Button -------------------- */
+.button {
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.259);
+    border-style: solid;
+    /* width: 67px; */
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 30px;
+
+    font-size: 14px;
+    font-family: "MuseoSansRounded";
+    color: rgb(225, 225, 225);
+    line-height: 30px;
+    text-align: center;
+}
+.button:hover {
+    border-color: rgba(255, 255, 0, 0.5);
+    color: yellow;
+}
+.button:active {
+    background-color: rgba(255, 255, 0, 0.25);
+}
+.button--big {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(76, 82, 90, 0.259);
+}
+
+/* ------------------ Slider -------------------- */
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__image {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.slider__dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider__dot {
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__dot--blue circle {
+    fill: #1f273f;
+}
+.slider__dot--red circle {
+    fill: #ed3333;
+}
+.slider__dot--aqua circle {
+    fill: #29e3ea;
+}
+.slider__dot--active circle {
+    stroke: #7e838b;
+    stroke-width: 1;
+}
+.slider__dot--active {
+    transform: scale(1.5);
+}
+.slider__dot:hover {
+    transform: scale(1.5);
+}
+.slider__dot:active circle {
+    fill: yellow;
+}
