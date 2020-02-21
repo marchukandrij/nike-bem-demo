@@ -39,6 +39,7 @@ body {
     position: relative;
     width: 686px;
     height: 391px;
+    overflow: hidden;
 }
 .card__images {
     width: 385px;
@@ -124,6 +125,9 @@ body {
     line-height: 30px;
     text-align: center;
 }
+.button img {
+    margin-left: 3px;
+}
 .button:hover {
     border-color: rgba(255, 255, 0, 0.5);
     color: yellow;
@@ -160,7 +164,7 @@ body {
     justify-content: center;
 }
 .slider__dot {
-    width: 16px;
+    width: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,4 +190,54 @@ body {
 }
 .slider__dot:active circle {
     fill: yellow;
+}
+
+/* ------------------ Sandbox Styles -------------------- */
+.block-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    font-family: "MuseoSansRounded";
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+}
+.block {
+    border: 1px solid red;
+}
+
+.element {
+    border: 1px solid green;
+}
+.empty {
+    font-family: "MuseoSansRounded";
+    color: white;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 0, 0.5);
+    color: black;
+    border-radius: 3px;
+}
+
+/* ------------------ Alternative card -------------------- */
+.card--tall {
+    width: 286px;
+    height: 565px;
+}
+.card--tall .card__images {
+    width: 250px;
+    height: 250px;
+}
+.card--tall .card__description {
+    width: 250px;
+    height: 355px;
+    position: absolute;
+    top: 286px;
+    padding: 0;
+    right: 18px;
+    left: 18px;
+    box-sizing: border-box;
 }
